@@ -9,11 +9,10 @@ public class IoDemo {
 
 		String file = "sample.txt";
 		FileInputStream fis = new FileInputStream(file);
-
 		while (fis.available() > 0) {
 			System.out.print((char) fis.read());
 		}
-
 		fis.close();
+
 	}
 }

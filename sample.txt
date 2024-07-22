@@ -1,1 +1,1 @@
-sample text in the file
+another text to be written to the file
