@@ -9,6 +9,7 @@ public class ColDemo {
 	public static void main(String[] args) {
 
 		ArrayList myFriends = new ArrayList();
+		
 		System.out.println(myFriends);
 		System.out.println(myFriends.size());
 		myFriends.add("Sonu");
@@ -19,6 +20,7 @@ public class ColDemo {
 		myFriends.remove(1);
 		System.out.println(myFriends);
 		System.out.println(myFriends.size());
+//		myFriends.
 
 //		String[] myFriends2 = { "Sonu", "Monu", "Tonu" }; // "Ponu"
 //		myFriends2.
