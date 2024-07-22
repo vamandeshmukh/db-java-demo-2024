@@ -14,8 +14,10 @@ public class MapDemo {
 		stateCodes.put("KA", "Karnataka");
 		stateCodes.put("GJ", "Gujarat");
 
+		System.out.println(stateCodes.keySet());
+		System.out.println(stateCodes.values());
 //		System.out.println(stateCodes);
-		System.out.println(stateCodes.get("TG"));
+//		System.out.println(stateCodes.get("TG"));
 
 	}
 
