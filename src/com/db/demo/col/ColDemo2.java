@@ -7,7 +7,8 @@ public class ColDemo2 {
 	public static void main(String[] args) {
 
 //		ArrayList myMarks = new ArrayList ();
-		ArrayList<Integer> myMarks = new ArrayList<Integer>();
+		ArrayList<Integer> myMarks = new ArrayList<>();
+//		ArrayList<Integer> myMarks = new ArrayList<Integer>();
 
 		myMarks.add(98);
 		myMarks.add(95);
