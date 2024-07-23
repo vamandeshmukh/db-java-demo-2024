@@ -26,7 +26,7 @@ public class FunDemo {
 		List<String> listS =  myList.stream().filter( name -> name.startsWith("S")).toList(); 		
 		listS.forEach(name -> System.out.println(name) );
 		
-		System.out.println("Print only first three names with stream API:");
+		System.out.println("Print only the first three names with stream API:");
 		myList.stream().limit(3).forEach(name -> System.out.println(name));
 
 		System.out.println("Skip the first two names with stream API:");
