@@ -23,9 +23,14 @@ public class FunDemo {
 		myList.stream().filter( name -> name.startsWith("S")).forEach(name -> System.out.println(name));
 
 		System.out.println("Create another list with names starting with 'S' with stream API:");
-		List<String> listS =  myList.stream().filter( name -> name.startsWith("S")).toList(); 
-		
+		List<String> listS =  myList.stream().filter( name -> name.startsWith("S")).toList(); 		
 		listS.forEach(name -> System.out.println(name) );
+		
+		System.out.println("Print only first three names with stream API:");
+		myList.stream().limit(3).forEach(name -> System.out.println(name));
+
+		System.out.println("Skip the first two names with stream API:");
+		myList.stream().skip(2).forEach(name -> System.out.println(name));
 	}
 
 }
