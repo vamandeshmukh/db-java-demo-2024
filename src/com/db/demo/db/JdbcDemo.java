@@ -37,6 +37,21 @@ public class JdbcDemo {
 	}
 }
 
+
+//IF the table does not exist - 
+// In Oracle SQL Developer -  run these lines one by one - 
+
+//CREATE TABLE employees (eid number(10), first_name varchar(40), salary number(8, 2));
+//
+//INSERT INTO employees (eid, first_name, salary) VALUES (101, 'Sonu', 90000.50);
+//INSERT INTO employees (eid, first_name, salary) VALUES (102, 'Monu', 95000.50);
+//INSERT INTO employees (eid, first_name, salary) VALUES (103, 'Tonu', 98000.50);
+//
+//SELECT * FROM employees;
+
+
+
+
 //package com.db.demo.db;
 //
 //import java.sql.Connection;
