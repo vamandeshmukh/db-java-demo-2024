@@ -24,6 +24,8 @@ public class FunDemo {
 
 		System.out.println("Create another list with names starting with 'S' with stream API:");
 		List<String> listS =  myList.stream().filter( name -> name.startsWith("S")).toList(); 
+		
+		listS.forEach(name -> System.out.println(name) );
 	}
 
 }
