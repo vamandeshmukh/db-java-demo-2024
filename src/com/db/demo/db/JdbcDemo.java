@@ -5,6 +5,7 @@ package com.db.demo.db;
 import java.sql.*;
 
 public class JdbcDemo {
+
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
 		String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
