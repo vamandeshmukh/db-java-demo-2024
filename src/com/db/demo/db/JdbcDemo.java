@@ -9,7 +9,7 @@ import java.sql.Statement;
 public class JdbcDemo {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
-		String url = "jdbc:mysql://localhost:3306/sakila";
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String user = "root";
 		String password = "root";
 
@@ -17,7 +17,7 @@ public class JdbcDemo {
 		Statement stmt = null;
 		ResultSet rs = null;
 
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("oracle.jdbc.driver.OracleDriver");
 
 		conn = DriverManager.getConnection(url, user, password);
 		System.out.println("Connected to the database successfully!");
@@ -38,6 +38,7 @@ public class JdbcDemo {
 }
 
 
+
 //package com.db.demo.db;
 //
 //import java.sql.Connection;
@@ -49,7 +50,7 @@ public class JdbcDemo {
 //public class JdbcDemo {
 //	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 //
-//		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+//		String url = "jdbc:mysql://localhost:3306/sakila";
 //		String user = "root";
 //		String password = "root";
 //
@@ -57,14 +58,14 @@ public class JdbcDemo {
 //		Statement stmt = null;
 //		ResultSet rs = null;
 //
-//		Class.forName("oracle.jdbc.driver.OracleDriver");
+//		Class.forName("com.mysql.cj.jdbc.Driver");
 //
 //		conn = DriverManager.getConnection(url, user, password);
 //		System.out.println("Connected to the database successfully!");
 //
 //		stmt = conn.createStatement();
 //
-//		String sql = "SELECT * FROM sakila.actor";
+//		String sql = "SELECT * FROM sakila.actor ORDER BY first_name";
 //		rs = stmt.executeQuery(sql);
 //
 //		while (rs.next()) {
@@ -76,3 +77,5 @@ public class JdbcDemo {
 //		conn.close();
 //	}
 //}
+
+
