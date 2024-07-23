@@ -1,6 +1,6 @@
 //-- slightly better formatted code 
 
-package com.db.demo.jdbc;
+package com.db.demo.db;
 
 import java.sql.*;
 
