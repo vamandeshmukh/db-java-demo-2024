@@ -10,9 +10,8 @@ public class InheritanceDemo3 {
 
 	public static void main(String[] args) {
 
-		Maths maths = (int i, int j) -> {
-			return i + j;
-		};
+//		Maths maths = (int i, int j) -> { return i + j; };
+		Maths maths = (int i, int j) -> i + j;
 
 		int sum = maths.addNums(10, 20);
 
