@@ -14,7 +14,11 @@ public class LambDemo {
 	}
 }
 
+@FunctionalInterface
 interface MathDemo {
 
 	public abstract int addNums(int i);
+
+//	public abstract int subNums(int i);
 }
+
